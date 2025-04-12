@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const diceBtn = document.getElementById('rollBtn');
-  const resultDiv = document.getElementById('result');
+
+  const diceNumber = Math.floor(Math.random() * 6) + 1;
+document.getElementById('dice-result').innerText = `🎲 Выпало: ${diceNumber}`;
+
 
   const outcomes = [
     "🌇 Прогуляйтесь как будто вы герой фэнтези-приключения. Не разговаривайте как обычно!",
