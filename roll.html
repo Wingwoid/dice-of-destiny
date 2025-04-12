@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🎲 Ролл дня — Dice of Destiny</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <title>Ролл дня — Dice of Destiny</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <a href="index.html">🏡 Главная</a>
-      <a href="roll.html">🎲 Ролл дня</a>
-      <a href="rules.html">📜 Правила</a>
-      <a href="quests.html">🎨 Задания</a>
-      <a href="npcs.html">🧙‍♀️ NPC</a>
-      <a href="loot.html">🧺 Лут</a>
-    </nav>
-
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="roll.html">Ролл дня</a>
+    <a href="rules.html">Правила</a>
+    <a href="creative.html">Задания</a>
+    <a href="npc.html">NPC</a>
+    <a href="loot.html">Лут</a>
+  </nav>
+  <main>
     <h1>🎲 Ролл дня</h1>
-    <p>Нажми на кнопку и узнай, что ждёт тебя сегодня!</p>
-    <h2 id="rollResult" class="roll-result">Нажми на кнопку, чтобы бросить кубик!</h2>
+    <p>Здесь будет генератор приключений на день.</p>
+    <button id="rollButton">Бросить кубик</button>
+    <p id="result"></p>
 
-    <button class="dice-button" id="rollBtn">Бросить кубик</button>
-
-    <div id="result" style="margin-top: 2rem; font-size: 1.25rem;"></div>
-  </div>
-
-  <script src="js/dice.js"></script>
+    <script src="js/dice.js"></script>
+  </main>
 </body>
 </html>
