@@ -1,1 +1,108 @@
+/* === Базовые стили для Dice of Destiny === */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+:root {
+  --bg-color: #f9f5ec;
+  --text-color: #3a2e2e;
+  --accent-color: #b48e66;
+  --button-color: #e4d2b7;
+  --button-hover: #d1b798;
+  --card-bg: #fffaf2;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  color: var(--accent-color);
+  text-align: center;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-color);
+}
+
+nav {
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 5px var(--shadow);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 10px var(--shadow);
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Анимация появления */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
