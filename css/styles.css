@@ -1,90 +1,25 @@
-/* Общие стили */
 body {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Georgia', serif;
-  background: linear-gradient(to bottom, #f9f3ea, #e8dfd1);
-  color: #3b2f2f;
-  line-height: 1.6;
-  background-image: url('../images/paper-texture.png');
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #fefcf9;
+  color: #333;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-h1, h2, h3 {
-  color: #5e4431;
-  text-shadow: 1px 1px 0 #ffffff80;
-}
-
-/* Меню */
 nav {
+  background-color: #eee;
+  padding: 10px;
   display: flex;
+  gap: 10px;
   justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
 }
 
 nav a {
   text-decoration: none;
-  background-color: #d9c8a9;
-  padding: 0.5rem 1rem;
-  border-radius: 12px;
-  box-shadow: 2px 2px 6px #00000022;
-  color: #3b2f2f;
-  transition: background-color 0.3s;
+  color: #444;
+  font-weight: bold;
 }
 
-nav a:hover {
-  background-color: #f3e4c6;
-}
-
-/* Кнопка "Бросить кубик" */
-.dice-button {
-  display: inline-block;
-  background: #bfa78a;
-  color: white;
-  font-size: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 3px 3px 10px #00000033;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.1s ease-in-out;
-}
-
-.dice-button:hover {
-  background: #d1bfa7;
-}
-
-.dice-button:active {
-  transform: scale(0.97);
-}
-
-/* Анимация броска */
-@keyframes roll {
-  0% { transform: rotate(0deg) scale(1); }
-  25% { transform: rotate(10deg) scale(1.05); }
-  50% { transform: rotate(-10deg) scale(1.1); }
-  75% { transform: rotate(5deg) scale(1.03); }
-  100% { transform: rotate(0deg) scale(1); }
-}
-
-.dice-rolling {
-  animation: roll 0.5s ease-in-out;
-}
-
-.roll-result {
-  font-size: 1.8em;
-  color: #4b3b2a;
-  margin-top: 20px;
-  text-align: center;
+main {
+  padding: 20px;
 }
